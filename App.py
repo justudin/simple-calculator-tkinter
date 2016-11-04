@@ -85,21 +85,21 @@ class Example(Frame):
     def plus(self):
         try:
             value = float(num1.get()) + float(num2.get())
-            res.set(value)
+            res.set(self.makeAsItIs(value))
         except:
             self.errorMsg('error')
 
     def minus(self):
         try:
             value = float(num1.get()) - float(num2.get())
-            res.set(value)
+            res.set(self.makeAsItIs(value))
         except:
             self.errorMsg('error')
 
     def mul(self):
         try:
             value = float(num1.get()) * float(num2.get())
-            res.set(value)
+            res.set(self.makeAsItIs(value))
         except:
             self.errorMsg('error')
 
@@ -110,9 +110,14 @@ class Example(Frame):
         elif num2.get() != '0':
             try:
                 value = float(num1.get()) / float(num2.get())
-                res.set(value)
+                res.set(self.makeAsItIs(value))
             except:
                 self.errorMsg('error')
+
+    def makeAsItIs(self, value):
+        if (value == int(value)):
+            value = int(value)
+        return value
 
 def main():
     root = Tk()
