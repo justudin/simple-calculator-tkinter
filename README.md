@@ -1,7 +1,7 @@
 Simple Calculator based on tkinter [![Build Status](https://travis-ci.org/justudin/simple-calculator-tkinter.svg?branch=master)](https://travis-ci.org/justudin/simple-calculator-tkinter)
 ==================================
 
-This scripts was written under **Python 3.5** and using **Pycharm Community Edition** and tkinter for GUI
+This scripts was written under **Python 3.5** and using **Pycharm Community Edition** and **tkinter** for GUI
 
 How to use?
 -----------
