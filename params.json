@@ -1,0 +1,6 @@
+{
+  "name": "Simple-calculator-tkinter",
+  "tagline": "Simple Calculator based on tkinter python gui",
+  "body": "Simple Calculator based on tkinter\r\n=========================\r\n\r\nThis scripts was written under **Python 3.5** and using **Pycharm Community Edition** and tkinter for GUI\r\n\r\nHow to use?\r\n-----------\r\nUsing command line below:\r\n- Windows Environment and already installed **Anaconda for python 3.x**:\r\n```bash\r\npython App.py\r\n```\r\n- *nix / Linux:\r\n```bash\r\npython3 App.py\r\n```\r\n\r\nor run it by using PyCharm IDE.\r\n\r\nScreenshot\r\n-----------\r\n![GUI.PNG](GUI.PNG)\r\n\r\nLicense\r\n--------\r\nFree and Open Source, Feel free to use and modified it.\r\n\r\nContact\r\n-------\r\nYou can contact me via [justudin](http://justudin.com)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
