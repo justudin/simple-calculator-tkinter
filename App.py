@@ -16,7 +16,7 @@ from tkinter import *
 import tkinter.messagebox
 from tkinter.ttk import Frame, Label, Entry
 
-class Example(Frame):
+class App(Frame):
     def __init__(self, parent):
         Frame.__init__(self, parent)
         self.parent = parent
@@ -122,7 +122,7 @@ class Example(Frame):
 def main():
     root = Tk()
     root.geometry("300x140")
-    app = Example(root)
+    app = App(root)
     root.mainloop()
 
 if __name__ == '__main__':
