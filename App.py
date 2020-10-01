@@ -16,6 +16,12 @@ from tkinter import *
 import tkinter.messagebox
 from tkinter.ttk import Frame, Label, Entry
 
+print("Simple Calculator is starting...")
+
+print("Type in your Username ")
+user_name = input()
+print("Hello!", user_name, "Welcome to the simple Calculator")
+
 class App(Frame):
     def __init__(self, parent):
         Frame.__init__(self, parent)
