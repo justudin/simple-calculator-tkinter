@@ -40,8 +40,8 @@ class App(Frame):
         lbl1 = Label(frame1, text="Input Number 1 :", width=15)
         lbl1.pack(side=LEFT, padx=5, pady=5)
 
-        entry1 = Entry(frame1,textvariable=num1)
-        entry1.pack(fill=X, padx=5, expand=True)
+        entry1 = Entry(frame1,textvariable=num1,font=("arial bold", 15))
+        entry1.pack(fill=X, padx=5,pady=4, expand=True)
 
         frame2 = Frame(self)
         frame2.pack(fill=X)
@@ -49,23 +49,23 @@ class App(Frame):
         lbl2 = Label(frame2, text="Input Number 2 :", width=15)
         lbl2.pack(side=LEFT, padx=5, pady=5)
 
-        entry2 = Entry(frame2,textvariable=num2)
+        entry2 = Entry(frame2,textvariable=num2,font=("arial bold", 15))
         entry2.pack(fill=X, padx=5, expand=True)
 
         frame3 = Frame(self)
         frame3.pack(fill=X)
 
-        btnplus = Button(frame3, text="+", width=8, command=self.plus)
-        btnplus.pack(side=LEFT, anchor=N, padx=5, pady=5)
+        btnplus = Button(frame3, text="+",font=("arial bold", 10),bg='cyan', width=8, command=self.plus)
+        btnplus.pack(side=LEFT, anchor=N, padx=2,pady=5)
 
-        btnminus = Button(frame3, text="-", width=8, command=self.minus)
-        btnminus.pack(side=LEFT, anchor=N, padx=5, pady=5)
+        btnminus = Button(frame3, text="-",font=("arial bold", 10),bg='cyan', width=8, command=self.minus)
+        btnminus.pack(side=LEFT, anchor=N,padx=2, pady=5)
 
-        btnmul = Button(frame3, text="*", width=8, command=self.mul)
-        btnmul.pack(side=LEFT, anchor=N, padx=5, pady=5)
+        btnmul = Button(frame3, text="x", width=8,font=("arial bold", 10),bg='cyan', command=self.mul)
+        btnmul.pack(side=LEFT, anchor=N,padx=2, pady=5)
 
-        btndiv = Button(frame3, text="/", width=8, command=self.div)
-        btndiv.pack(side=LEFT, anchor=N, padx=5, pady=5)
+        btndiv = Button(frame3, text="/", width=8,font=("arial bold", 10),bg='cyan', command=self.div)
+        btndiv.pack(side=LEFT, anchor=N, padx=2,pady=5)
 
         frame4 = Frame(self)
         frame4.pack(fill=X)
@@ -73,7 +73,7 @@ class App(Frame):
         lbl3 = Label(frame4, text="Result :", width=10)
         lbl3.pack(side=LEFT, padx=5, pady=5)
 
-        result = Entry(frame4,textvariable=res)
+        result = Entry(frame4,textvariable=res,font=("arial bold", 15))
         result.pack(fill=X, padx=5, expand=True)
 
     def errorMsg(self,msg):
@@ -122,6 +122,8 @@ class App(Frame):
 def main():
     root = Tk()
     root.geometry("300x140")
+    root.maxsize(300,140)
+    root.minsize(300,140)
     app = App(root)
     root.mainloop()
 
